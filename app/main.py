@@ -12,7 +12,6 @@ class IntegerRange:
     def __get__(self, instance: str, owner: str) -> None:
         return instance.__dict__[self.name]
 
-
     def __set__(self, instance: str, value: str) -> None:
         if not isinstance(value, int):
             raise TypeError
